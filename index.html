@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de 15 Años</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Valentina Sofia Vidal Menard">
+    <meta property="og:description" content="𝑰𝒏𝒗𝒊𝒕𝒂𝒄𝒊𝒐́𝒏 𝑿𝑽">
+    <meta property="og:image" content="https://userandres99.github.io/Invitacion/Visual.jpg">
+    <meta property="og:url" content="https://userandres99.github.io/Invitacion/">
+    <meta property="og:type" content="website">
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("YuhNLEEbOV1b_o_7q"); // Inicializa EmailJS con tu clave pública
+       })();
+    </script>
+</head>
+<body>
+    <div id="contenido" class="hidden">
+        <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+            <div class="invitation shadow rounded">
+                <div class="XVanios mb-3">
+                    <!-- imagen aquí -->
+                </div>
+                <div class="content mb-3">
+                    <div class="left">
+                        <p>Hay momentos inolvidables que se atesoran en el corazón para siempre, por esa razón quiero que compartas conmigo este día tan especial</p>
+                    </div>
+                    <div class="center"></div>
+                    <div class="right">
+                        <p>Sabado 16 de Noviembre </br> a las 00:00 hs</p>
+                        <p id="invitados"></p>
+                    </div>
+                </div>
+                <div class="invitation-footer text-center mt-2">
+                    <p>Por favor, Confirmar Asistencia y solo asistir las personas mencionadas, ya que el espacio es limitado </p>
+                </div>
+                <div class="arrow-container">
+                    <span class="arrow-down"></span>
+                </div>
+                <div class="mensajito">
+                    <p style="margin: 0;">Para mí lo más importante es tu presencia, pero si algo me querés regalar con dinero lo sabré apreciar.</p>
+                </div>
+                <div class="footer-buttons d-flex justify-content-between align-items-center px-3 py-2 mb-5">
+                    <button id="confirmar-asistencia" class="btn btn-custom">Confirmar asistencia</button>
+                    <div class="gift-message">
+                        <p class="parrafoCBU" style="margin: 0; font-weight: bold;">ALIAS: sofii.menard</p>
+                    </div>
+                    <button id="ubicacion" class="btn btn-custom">Ubicación</button>
+                </div>
+                <iframe id="mensaje-iframe" class="mensaje-iframe" style="display: none;"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <div id="preloader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #fff; display: flex; justify-content: center; align-items: center; z-index: 9999;">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Cargando...</span>
+        </div>
+    </div>
+</body>
+</html>
